@@ -8,7 +8,7 @@ class PhpFunctionExtensionTest extends \PHPUnit\Framework\TestCase
 
     private $phpFunctionExt;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->phpFunctionExt = new PhpFunctionExtension();
         $loader = new Twig_Loader_Array([
